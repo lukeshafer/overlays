@@ -1,0 +1,30 @@
+{
+  "name": "overlays",
+  "version": "1.0.0",
+  "description": "Stream Overlays for snailyLuke. NO AI",
+  "scripts": {
+    "sst": "sst",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "snailyLuke",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.21.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.21.0",
+  "type": "module",
+  "devDependencies": {
+    "sst": "^4.17.2"
+  },
+  "dependencies": {
+    "@hono/aws-lambda": "^1.0.1",
+    "@openauthjs/openauth": "^0.4.3",
+    "hono": "^4.13.19",
+    "valibot": "^1.5.0"
+  }
+}
