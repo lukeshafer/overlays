@@ -18,9 +18,19 @@ export default $config({
 
     const auth = new sst.aws.Auth("TwitchAuth", {
       issuer: {
-        handler: "functions/auth.handler",
+        handler: "src/auth/issuer.handler",
         link: [clientID, clientSecret],
       },
     });
+
+		const bucket = new sst.aws.StaticSite("SiteAssets", {
+
+		})
+
+		const site = new sst.aws.Function("CreateASnail", {
+			handler: "src/snailmaker/index.handler",
+			url: true,
+			link: []
+		})
   },
 });

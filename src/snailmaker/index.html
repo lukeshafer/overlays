@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Create A Snail</title>
+	<script type="module" src="main.ts"></script>
+</head>
+
+<body>
+	<main>
+		<form id="snail-preview-form">
+			<fieldset class="bodies">
+				<legend>Body</legend>
+			</fieldset>
+			<fieldset class="eyes">
+				<legend>Eyes</legend>
+			</fieldset>
+			<fieldset class="mouths">
+				<legend>Mouth</legend>
+			</fieldset>
+
+			<fieldset>
+				<div>
+					<label for="body-hue">Body Hue</label>
+					<input type="range" value="180" min="0" max="360" name="body-hue" id="body-hue" />
+				</div>
+				<div>
+					<label for="body-brightness">Body Brightness</label>
+					<input type="range" value="1" min="0.2" max="1.2" step="0.01" name="body-brightness" id="body-brightness" />
+				</div>
+				<div>
+					<label for="body-saturation">Body Saturation</label>
+					<input type="range" value="3" min="0" max="15" step="0.01" name="body-saturation" id="body-saturation" />
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div>
+					<label for="shell-hue">Shell Hue</label>
+					<input type="range" value="180" min="0" max="360" name="shell-hue" id="shell-hue" />
+				</div>
+				<div>
+					<label for="shell-brightness">Shell Brightness</label>
+					<input type="range" value="1" min="0.2" max="1.2" step="0.01" name="shell-brightness" id="shell-brightness" />
+				</div>
+				<div>
+					<label for="shell-saturation">Shell Saturation</label>
+					<input type="range" value="3" min="0" max="15" step="0.01" name="shell-saturation" id="shell-saturation" />
+				</div>
+			</fieldset>
+		</form>
+		<snail-preview for="snail-preview-form">
+			<figure>
+				<div class="body-wrapper">
+					<img alt="" class="body" />
+					<div class="face-wrapper">
+						<img alt="" class="eyes" />
+						<img alt="" class="mouth" />
+					</div>
+				</div>
+				<img alt="" class="shell" />
+			</figure>
+		</snail-preview>
+	</main>
+</body>
+
+<template id="radio-template">
+	<div class="cb-wrapper">
+		<input type="radio" />
+		<label></label>
+	</div>
+</template>
+
+</html>

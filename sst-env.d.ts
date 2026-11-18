@@ -6,6 +6,11 @@
 
 declare module "sst" {
   export interface Resource {
+    "CreateASnail": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
     "TwitchAuth": {
       "type": "sst.aws.Auth"
       "url": string

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Stream Overlays for snailyLuke. NO AI",
   "scripts": {
+		"dev": "vite dev",
     "sst": "sst",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +20,9 @@
   "packageManager": "pnpm@12.21.0",
   "type": "module",
   "devDependencies": {
-    "sst": "^4.17.2"
+    "@tsconfig/node24": "^24.0.6",
+    "sst": "^4.17.2",
+    "vite": "^8.3.8"
   },
   "dependencies": {
     "@hono/aws-lambda": "^1.0.1",

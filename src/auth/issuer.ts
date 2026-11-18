@@ -1,7 +1,7 @@
 import { handle } from "@hono/aws-lambda";
 import { issuer } from "@openauthjs/openauth";
 import { TwitchProvider } from "@openauthjs/openauth/provider/twitch";
-import { subjects } from "./subjects";
+import { subjects } from "../functions/subjects";
 import { Resource } from "sst";
 import { decode } from "hono/jwt";
 

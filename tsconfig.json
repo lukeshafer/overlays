@@ -1,11 +1,17 @@
 {
-  "extends": "@tsconfig/node24/tsconfig.json",
-  "exclude": [
-    ".sst"
-  ],
-  "compilerOptions": {
-    "strict": true,
+	"extends": "@tsconfig/node24/tsconfig.json",
+	"exclude": [
+		".sst"
+	],
+	"compilerOptions": {
+		"strict": true,
+		"lib": [
+			"DOM",
+			"ES2025"
+		],
     "module": "esnext",
-    "moduleResolution": "bundler"
-  }
+		"moduleResolution": "bundler",
+		"jsx": "react-jsx",
+		"jsxImportSource": "hono/jsx"
+	}
 }
